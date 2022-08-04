@@ -12,10 +12,10 @@ import java.util.List;
 public class SimpleTransition<S, E, C> implements Transition<S, E, C> {
     private final State<S, E, C> to;
     private final E event;
-    private final AbstractState.Guard<E, C> guard;
+    private final Guard<E, C> guard;
     private List<Action<E, C>> actions = new ArrayList<>();
 
-    public SimpleTransition(E event, State<S, E, C> to, AbstractState.Guard<E, C> guard, List<Action<E, C>> actions) {
+    public SimpleTransition(E event, State<S, E, C> to, Guard<E, C> guard, List<Action<E, C>> actions) {
         this.to = to;
         this.event = event;
         this.guard = guard;
@@ -33,7 +33,7 @@ public class SimpleTransition<S, E, C> implements Transition<S, E, C> {
     }
 
     @Override
-    public AbstractState.Guard<E, C> getGuard() {
+    public Guard<E, C> getGuard() {
         return this.guard;
     }
 

@@ -13,7 +13,7 @@ public interface Transition<S, E, C> {
 
     E getEvent();
 
-    AbstractState.Guard<E, C> getGuard();
+    Guard<E, C> getGuard();
 
     void addAction(Action<E, C> action);
 

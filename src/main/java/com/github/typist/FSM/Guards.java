@@ -10,10 +10,10 @@ import lombok.NoArgsConstructor;
  */
 @NoArgsConstructor(access = AccessLevel.PRIVATE)
 public final class Guards {
-    private static final AbstractState.Guard ALWAYS_TRUE_GUARD = (e, c) -> true;
+    private static final Guard ALWAYS_TRUE_GUARD = (e, c) -> true;
 
     @SuppressWarnings("unchecked")
-    public static <E, C> AbstractState.Guard<E, C> alwaysTrue() {
+    public static <E, C> Guard<E, C> alwaysTrue() {
         return ALWAYS_TRUE_GUARD;
     }
 }

@@ -1,7 +1,7 @@
 package com.github.typist.FSM;
 
-import org.apache.commons.lang3.ArrayUtils;
 import org.apache.commons.collections4.CollectionUtils;
+import org.apache.commons.lang3.ArrayUtils;
 
 import java.util.*;
 
@@ -65,10 +65,5 @@ public abstract class AbstractState<S, E, C> implements State<S, E, C> {
         }
 
         addTransition(new SimpleTransition<>(event, to, guard, Arrays.asList(actions)));
-    }
-
-
-    public interface Guard<E, C> {
-        boolean evaluate(Event<E> event, C ctx);
     }
 }
