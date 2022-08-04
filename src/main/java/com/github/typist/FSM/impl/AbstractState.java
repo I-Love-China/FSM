@@ -1,5 +1,6 @@
-package com.github.typist.FSM;
+package com.github.typist.FSM.impl;
 
+import com.github.typist.FSM.api.*;
 import org.apache.commons.collections4.CollectionUtils;
 import org.apache.commons.lang3.ArrayUtils;
 

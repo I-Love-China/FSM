@@ -1,4 +1,4 @@
-package com.github.typist.FSM;
+package com.github.typist.FSM.api;
 
 /**
  * @author: zhangjl

@@ -1,4 +1,8 @@
-package com.github.typist.FSM;
+package com.github.typist.FSM.impl;
+
+import com.github.typist.FSM.api.Event;
+import com.github.typist.FSM.api.FSM;
+import com.github.typist.FSM.api.State;
 
 import java.util.*;
 

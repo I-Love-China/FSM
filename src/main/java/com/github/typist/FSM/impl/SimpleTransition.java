@@ -1,4 +1,9 @@
-package com.github.typist.FSM;
+package com.github.typist.FSM.impl;
+
+import com.github.typist.FSM.api.Action;
+import com.github.typist.FSM.api.Guard;
+import com.github.typist.FSM.api.State;
+import com.github.typist.FSM.api.Transition;
 
 import java.util.ArrayList;
 import java.util.Collections;

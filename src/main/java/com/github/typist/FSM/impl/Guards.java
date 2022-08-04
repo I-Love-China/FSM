@@ -1,5 +1,6 @@
-package com.github.typist.FSM;
+package com.github.typist.FSM.impl;
 
+import com.github.typist.FSM.api.Guard;
 import lombok.AccessLevel;
 import lombok.NoArgsConstructor;
 

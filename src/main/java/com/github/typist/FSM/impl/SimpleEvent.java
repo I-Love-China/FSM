@@ -1,5 +1,6 @@
-package com.github.typist.FSM;
+package com.github.typist.FSM.impl;
 
+import com.github.typist.FSM.api.Event;
 import org.apache.commons.collections4.MapUtils;
 
 import java.util.Collections;
